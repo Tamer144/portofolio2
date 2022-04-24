@@ -84,7 +84,7 @@ header{
 header > q{
     color: #4d578c;
     position: absolute;
-    font-size: 3vw;
+    font-size: 4vh;
     top: 57vh;
     left: 12vw;
     letter-spacing: 0.6vw;
@@ -122,7 +122,7 @@ header > q + q{
 
 .nav-bar-list{
     opacity: 0;
-    margin: 0 0 0 2rem;
+    margin: 0 0 0 4vw;
 }
 
 .nav-bar-item > a::after{
@@ -156,10 +156,11 @@ header > q + q{
 }
 .section-title{
     color: #fff;
-    font-size: 3.6rem;
+    font-size: 5vw;
     letter-spacing: 13px;
     margin-top:3rem ;
     text-align: center;
+    overflow: hidden;
 }
 
 
@@ -176,9 +177,9 @@ header > q + q{
     position: absolute;
     z-index: 1;
     border: #fff solid 2px;
-    border-radius: 20px;
+    border-radius: 1.3vw;
     letter-spacing: 4px;
-    padding: 3rem 1rem 1rem 3rem;
+    padding: 4vw 1.6vw 1.6vw 4vw;
 }
 .card1-1{
     left: var(--card1-1-small-left);
@@ -192,14 +193,16 @@ header > q + q{
 }
 .small{
     width: var(--small-width);
+    font-size: 1.3vw;
 }
 .medium{
     width: var(--medium-width);
-    font-size: 1.1rem;
+    font-size: 1.5vw;
 }
 
 .large{
     width: var(--large-width);
+    font-size: 1.5vw;
 }
 
 .about-me-img{
@@ -214,7 +217,7 @@ header > q + q{
 .card-image{
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 20px;
+    border-radius: 1.1vw;
     position: absolute;
 }
 
@@ -238,7 +241,6 @@ header > q + q{
 }
 .card2-2{
     width: 80% !important;
-    font-size: 0.9rem;
     top:var(--card2-2-medium-top) ;
     right: var(--card2-2-medium-right);
     opacity: 0;
@@ -255,10 +257,10 @@ header > q + q{
     height: 40%;
     width: 30%;
     background-color: #001a3f;
-    border-radius:20px; 
+    border-radius:2vw; 
     position: absolute;
     z-index: 1;
-    border: #fff solid 3px;
+    border: #fff solid 0.3vw;
     text-align: center;
     padding: 2rem;
     color: #fff;
@@ -270,11 +272,11 @@ header > q + q{
 }
 .skill-title{
     margin-bottom: 2rem;
-    font-size: 1.8rem;
+    font-size: 2vw;
 }
 .skill-card > p{
-    font-size: 0.9rem;
-    letter-spacing: 3px;
+    font-size: 1.3vw;
+    letter-spacing: 0.1vw;
 
 }
 .sk-card1{
@@ -299,10 +301,10 @@ header > q + q{
     left: 11%;
     z-index: 0 !important;
     width: 27%;
-    font-size: 0.9rem !important;
 }
 .skills-card-img{
-    background: url(Images/skills-Image.png);
+    background: url(Images/skills-Image.png) no-repeat;
+    background-size: cover;
     width: 35%;
     height: 80%;
     right: 12%;
@@ -313,7 +315,7 @@ header > q + q{
 
 .contact-info{
     display: flex;
-    font-size: 1.9rem;
+    font-size: 2.6vw;
     color: #fff;
     margin: bottom 4rem; ;
     justify-content: space-around;
@@ -339,7 +341,6 @@ header > q + q{
 @media(max-width : 1150px) {
 
         header > q{
-            font-size: 2.1rem;
             top: 57%;
             left: 30%;
             letter-spacing: 4px;
