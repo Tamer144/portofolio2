@@ -88,13 +88,13 @@ $(function(){
             emailjs.send('service_eoae30c', 'template_mhzbgxm', templateParams)
                 .then(function(response) {
                 console.log('SUCCESS!', response.status, response.text);
-                document.getElementById('submit').innerText = 'Success';
+                document.getElementById('submit').innerText = 'Thanks!';
                 }, function(error) {
                 console.log('FAILED...', error);
-                document.getElementById('submit').innerText = 'Failed';
+                document.getElementById('submit').innerText = 'Wrong thing!!';
                 });
         } else{
-            document.getElementById('submit').innerText = 'Failed';
+            document.getElementById('submit').innerText = 'Wrong thing!!';
         }
     }
      document.getElementById('submit').addEventListener('click' , sendEmail)
