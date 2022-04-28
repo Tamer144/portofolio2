@@ -315,13 +315,52 @@ header > q + q{
 
 .contact-info{
     display: flex;
-    font-size: 2.6vw;
     color: #fff;
     margin: bottom 4rem; ;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 100vw;
+    height: 40vh;
     font-weight: 900;
+}
+
+.contact-info > form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width:100vw;
+
+}
+.contact-info > form > input{
+    padding: 1.2vw;
+    border-radius: 0.3vw;
+    width: 40vw;
+    height: 3vh;
+    font-size: 1.2vw;
+}
+.contact-info > form > textarea{
+    padding: 0.5rem;
+    border-radius: 0.3vw;
+    width: 40vw;
+    height: 20vh;
+    font-size: 1.2vw;
+}
+
+#submit{
+    height: 4vh;
+    width: 6vh;
+    border-radius: 0.7vh;
+    background-color: rgba(255, 255, 255, 0);
+    color: #fff;
+    border: #fff 2px solid;
+    font-size: 1.3vh;
+}
+#submit:hover{
+    background-color: rgb(255, 255, 255);
+    color:  #001a3f;
+    font-weight: 600;
 }
 
 /*Make the toggle*/
@@ -472,10 +511,7 @@ header > q + q{
         top: 10%;
     }
 
-    .contact-info{
-        flex-direction: column;
-        height: 20%;
-    }
+
 }
 @media(max-width : 580px){
     .card1-2{

@@ -71,6 +71,33 @@ $(function(){
         }
     })
 
+    const sendEmail = ()=>{
+
+        const from_name = document.getElementById('name').value;
+        const massage = document.getElementById('massage').value;
+        const email = document.getElementById('email').value;
+
+        var templateParams = {
+            from_name: from_name,
+            to_name: "tamer fakhoury",
+            message: massage,
+            reply_to : email,
+            notes: 'New Email from your webpage'
+        };
+        if(from_name != '' && massage != ''  && email != ''){
+            emailjs.send('service_eoae30c', 'template_mhzbgxm', templateParams)
+                .then(function(response) {
+                console.log('SUCCESS!', response.status, response.text);
+                document.getElementById('submit').innerText = 'Success';
+                }, function(error) {
+                console.log('FAILED...', error);
+                document.getElementById('submit').innerText = 'Failed';
+                });
+        } else{
+            document.getElementById('submit').innerText = 'Failed';
+        }
+    }
+     document.getElementById('submit').addEventListener('click' , sendEmail)
 
 
 })

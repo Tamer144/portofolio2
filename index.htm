@@ -90,12 +90,24 @@
                 Lets Work Togather
             </h1>
             <div class="contact-info">
-                <p>Email: tamer.mlcm@gmail.com</p>
-                <p>Phone Number +970-594-988-450</p>
+                <form>
+                    <input type="text" id="name" placeholder="Enter your name">
+                    <input type="email" id="email" placeholder="Enter your email">
+                    <textarea name="massage" id="massage" cols="30" rows="10" placeholder="Enter your massage"></textarea>
+                    <button type="button" id="submit">Submit</button>
+                </form>
             </div>
         </section>
     </footer>
     <script src="js/jquery.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("nPgdVNLEz7SybMExy");
+        })();
+    </script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/effects.js"></script>
 </body>
